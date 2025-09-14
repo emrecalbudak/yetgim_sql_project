@@ -1,0 +1,18 @@
+<?xml version='1.0'  encoding='UTF-8' ?>
+<history>
+	<historyItem>
+		<sql><![CDATA[SELECT
+    d.department_name,
+    e.first_name,
+    e.last_name
+FROM
+    departments d
+LEFT JOIN
+    employees e ON d.department_id = e.department_id;]]></sql>
+		<connection><![CDATA[exmdb]]></connection>
+		<timestamp><![CDATA[1757766910104]]></timestamp>
+		<type><![CDATA[SQL]]></type>
+		<executed><![CDATA[1]]></executed>
+		<execTime><![CDATA[0.007]]></execTime>
+	</historyItem>
+</history>

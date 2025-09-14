@@ -1,0 +1,20 @@
+<?xml version='1.0'  encoding='UTF-8' ?>
+<history>
+	<historyItem>
+		<sql><![CDATA[SELECT
+    e.first_name,
+    e.last_name,
+    s.salary_amount
+FROM
+    employees e
+JOIN
+    salaries s ON e.employee_id = s.employee_id
+WHERE
+    s.salary_amount > 75000;]]></sql>
+		<connection><![CDATA[exmdb]]></connection>
+		<timestamp><![CDATA[1757766210533]]></timestamp>
+		<type><![CDATA[SQL]]></type>
+		<executed><![CDATA[1]]></executed>
+		<execTime><![CDATA[0.015]]></execTime>
+	</historyItem>
+</history>

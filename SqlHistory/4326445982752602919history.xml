@@ -1,0 +1,28 @@
+<?xml version='1.0'  encoding='UTF-8' ?>
+<history>
+	<historyItem>
+		<sql><![CDATA[WITH department_avg_salary AS (
+    SELECT
+        department_id,
+        AVG(salary) AS avg_salary
+    FROM
+        employees
+    GROUP BY
+        department_id
+),
+SELECT
+    d.department_name,
+    da.avg_salary
+FROM
+    department_avg_salary da
+JOIN
+    departments d ON da.department_id = d.department_id
+WHERE
+    da.avg_salary > 70000;]]></sql>
+		<connection><![CDATA[exmdb]]></connection>
+		<timestamp><![CDATA[1757767345620]]></timestamp>
+		<type><![CDATA[Script]]></type>
+		<executed><![CDATA[1]]></executed>
+		<execTime><![CDATA[0.104]]></execTime>
+	</historyItem>
+</history>

@@ -1,0 +1,8 @@
+SELECT
+    e.first_name,
+    e.last_name,
+    s.salary_amount
+FROM
+    employees e
+JOIN
+    salaries s ON e.employee_id = s.employee_id;

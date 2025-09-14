@@ -1,0 +1,21 @@
+<?xml version='1.0'  encoding='UTF-8' ?>
+<history>
+	<historyItem>
+		<sql><![CDATA[SELECT
+    e.first_name,
+    e.last_name,
+    s.salary_amount
+FROM
+    employees e
+JOIN
+    salaries s ON e.employee_id = s.employee_id
+ORDER BY
+    s.salary_amount DESC
+FETCH NEXT 1 ROWS ONLY;]]></sql>
+		<connection><![CDATA[exmdb]]></connection>
+		<timestamp><![CDATA[1757766269623]]></timestamp>
+		<type><![CDATA[SQL]]></type>
+		<executed><![CDATA[1]]></executed>
+		<execTime><![CDATA[0.012]]></execTime>
+	</historyItem>
+</history>

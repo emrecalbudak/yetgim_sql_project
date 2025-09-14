@@ -1,0 +1,21 @@
+<?xml version='1.0'  encoding='UTF-8' ?>
+<history>
+	<historyItem>
+		<sql><![CDATA[SELECT
+    d.department_name,
+    COUNT(e.employee_id) AS employee_count
+FROM
+    employees e
+JOIN
+    departments d ON e.department_id = d.department_id
+GROUP BY
+    d.department_name
+HAVING
+    COUNT(e.employee_id) > 10;]]></sql>
+		<connection><![CDATA[exmdb]]></connection>
+		<timestamp><![CDATA[1757766819889]]></timestamp>
+		<type><![CDATA[SQL]]></type>
+		<executed><![CDATA[1]]></executed>
+		<execTime><![CDATA[0.006]]></execTime>
+	</historyItem>
+</history>

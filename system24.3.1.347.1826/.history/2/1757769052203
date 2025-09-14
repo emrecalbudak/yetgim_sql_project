@@ -1,0 +1,530 @@
+-- departments tablosuna Türkçe veri ekle
+INSERT INTO departments (department_id, department_name) VALUES (10, 'Bilişim');
+INSERT INTO departments (department_id, department_name) VALUES (20, 'İnsan Kaynakları');
+INSERT INTO departments (department_id, department_name) VALUES (30, 'Satış');
+INSERT INTO departments (department_id, department_name) VALUES (40, 'Pazarlama');
+INSERT INTO departments (department_id, department_name) VALUES (50, 'Finans');
+INSERT INTO departments (department_id, department_name) VALUES (60, 'Ar-Ge');
+INSERT INTO departments (department_id, department_name) VALUES (70, 'Hukuk');
+INSERT INTO departments (department_id, department_name) VALUES (80, 'Halkla İlişkiler');
+
+-- jobs tablosuna Türkçe veri ekle
+INSERT INTO jobs (job_id, job_title, min_salary, max_salary) VALUES (1001, 'Yazılım Mühendisi', 60000, 120000);
+INSERT INTO jobs (job_id, job_title, min_salary, max_salary) VALUES (1002, 'İnsan Kaynakları Uzmanı', 50000, 80000);
+INSERT INTO jobs (job_id, job_title, min_salary, max_salary) VALUES (1003, 'Satış Temsilcisi', 45000, 90000);
+INSERT INTO jobs (job_id, job_title, min_salary, max_salary) VALUES (1004, 'Pazarlama Analisti', 55000, 95000);
+INSERT INTO jobs (job_id, job_title, min_salary, max_salary) VALUES (1005, 'Finans Analisti', 65000, 110000);
+INSERT INTO jobs (job_id, job_title, min_salary, max_salary) VALUES (1006, 'Araştırma Geliştirme Uzmanı', 70000, 130000);
+INSERT INTO jobs (job_id, job_title, min_salary, max_salary) VALUES (1007, 'Hukuk Müşaviri', 85000, 150000);
+INSERT INTO jobs (job_id, job_title, min_salary, max_salary) VALUES (1008, 'Halkla İlişkiler Sorumlusu', 48000, 75000);
+
+-- employees tablosuna 100'den fazla veri ekle
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, salary, job_id, department_id) VALUES (101, 'Ahmet', 'Yılmaz', 'ahmet.yilmaz', '555-101-1111', TO_DATE('2023-01-15', 'YYYY-MM-DD'), 75000, 1001, 10);
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, salary, job_id, department_id) VALUES (102, 'Ayşe', 'Demir', 'ayse.demir', '555-102-2222', TO_DATE('2022-03-20', 'YYYY-MM-DD'), 60000, 1002, 20);
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, salary, job_id, department_id) VALUES (103, 'Mehmet', 'Şahin', 'mehmet.sahin', '555-103-3333', TO_DATE('2023-06-10', 'YYYY-MM-DD'), 85000, 1003, 30);
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, salary, job_id, department_id) VALUES (104, 'Fatma', 'Kara', 'fatma.kara', '555-104-4444', TO_DATE('2024-02-25', 'YYYY-MM-DD'), 90000, 1004, 40);
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, salary, job_id, department_id) VALUES (105, 'Mustafa', 'Koç', 'mustafa.koc', '555-105-5555', TO_DATE('2021-11-01', 'YYYY-MM-DD'), 100000, 1001, 10);
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, salary, job_id, department_id) VALUES (106, 'Zeynep', 'Yıldız', 'zeynep.yildiz', '555-106-6666', TO_DATE('2023-09-01', 'YYYY-MM-DD'), 70000, 1005, 50);
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, salary, job_id, department_id) VALUES (107, 'Ali', 'Can', 'ali.can', '555-107-7777', TO_DATE('2022-05-18', 'YYYY-MM-DD'), 55000, 1002, 20);
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, salary, job_id, department_id) VALUES (108, 'Selin', 'Güneş', 'selin.gunes', '555-108-8888', TO_DATE('2024-04-05', 'YYYY-MM-DD'), 65000, 1003, 30);
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, salary, job_id, department_id) VALUES (109, 'Hasan', 'Arslan', 'hasan.arslan', '555-109-9999', TO_DATE('2023-03-12', 'YYYY-MM-DD'), 80000, 1004, 40);
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, salary, job_id, department_id) VALUES (110, 'Elif', 'Toprak', 'elif.toprak', '555-110-0000', TO_DATE('2022-08-20', 'YYYY-MM-DD'), 95000, 1005, 50);
+
+-- 111'den 200'e kadar ek çalışanlar
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, salary, job_id, department_id) VALUES (111, 'Can', 'Aslan', 'can.aslan', '555-111-1111', TO_DATE('2024-01-01', 'YYYY-MM-DD'), 72000, 1001, 10);
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, salary, job_id, department_id) VALUES (112, 'Deniz', 'Çelik', 'deniz.celik', '555-112-2222', TO_DATE('2023-10-10', 'YYYY-MM-DD'), 58000, 1002, 20);
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, salary, job_id, department_id) VALUES (113, 'Emre', 'Özdemir', 'emre.ozdemir', '555-113-3333', TO_DATE('2022-12-05', 'YYYY-MM-DD'), 92000, 1003, 30);
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, salary, job_id, department_id) VALUES (114, 'Gamze', 'Yılmaz', 'gamze.yilmaz', '555-114-4444', TO_DATE('2024-05-18', 'YYYY-MM-DD'), 88000, 1004, 40);
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, salary, job_id, department_id) VALUES (115, 'İbrahim', 'Akın', 'ibrahim.akin', '555-115-5555', TO_DATE('2023-08-01', 'YYYY-MM-DD'), 115000, 1001, 10);
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, salary, job_id, department_id) VALUES (116, 'Gizem', 'Şen', 'gizem.sen', '555-116-6666', TO_DATE('2022-02-14', 'YYYY-MM-DD'), 75000, 1005, 50);
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, salary, job_id, department_id) VALUES (117, 'Büşra', 'Akgün', 'busra.akgun', '555-117-7777', TO_DATE('2024-06-20', 'YYYY-MM-DD'), 60000, 1002, 20);
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, salary, job_id, department_id) VALUES (118, 'Kemal', 'Duran', 'kemal.duran', '555-118-8888', TO_DATE('2023-04-01', 'YYYY-MM-DD'), 78000, 1003, 30);
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, salary, job_id, department_id) VALUES (119, 'Seda', 'Koçak', 'seda.kocak', '555-119-9999', TO_DATE('2022-09-09', 'YYYY-MM-DD'), 95000, 1004, 40);
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, salary, job_id, department_id) VALUES (120, 'Oğuz', 'Keskin', 'oguz.keskin', '555-120-0000', TO_DATE('2023-07-25', 'YYYY-MM-DD'), 105000, 1001, 10);
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, salary, job_id, department_id) VALUES (121, 'Pınar', 'Aksoy', 'pinar.aksoy', '555-121-1111', TO_DATE('2024-03-01', 'YYYY-MM-DD'), 62000, 1002, 20);
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, salary, job_id, department_id) VALUES (122, 'Kerem', 'Turan', 'kerem.turan', '555-122-2222', TO_DATE('2022-10-15', 'YYYY-MM-DD'), 81000, 1003, 30);
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, salary, job_id, department_id) VALUES (123, 'Ece', 'Öztürk', 'ece.ozturk', '555-123-3333', TO_DATE('2023-11-20', 'YYYY-MM-DD'), 91000, 1004, 40);
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, salary, job_id, department_id) VALUES (124, 'Barış', 'Şenel', 'baris.senel', '555-124-4444', TO_DATE('2024-02-12', 'YYYY-MM-DD'), 78000, 1005, 50);
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, salary, job_id, department_id) VALUES (125, 'Cansu', 'Yıldırım', 'cansu.yildirim', '555-125-5555', TO_DATE('2023-05-08', 'YYYY-MM-DD'), 125000, 1001, 10);
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, salary, job_id, department_id) VALUES (126, 'Koray', 'Aydın', 'koray.aydin', '555-126-6666', TO_DATE('2022-07-11', 'YYYY-MM-DD'), 85000, 1006, 60);
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, salary, job_id, department_id) VALUES (127, 'Burcu', 'Özkaya', 'burcu.ozkaya', '555-127-7777', TO_DATE('2024-01-22', 'YYYY-MM-DD'), 95000, 1007, 70);
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, salary, job_id, department_id) VALUES (128, 'Furkan', 'Erdoğan', 'furkan.erdogan', '555-128-8888', TO_DATE('2023-03-05', 'YYYY-MM-DD'), 52000, 1008, 80);
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, salary, job_id, department_id) VALUES (129, 'Leyla', 'Tuncer', 'leyla.tuncer', '555-129-9999', TO_DATE('2022-06-30', 'YYYY-MM-DD'), 68000, 1004, 40);
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, salary, job_id, department_id) VALUES (130, 'Cem', 'Yaman', 'cem.yaman', '555-130-0000', TO_DATE('2024-04-14', 'YYYY-MM-DD'), 74000, 1001, 10);
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, salary, job_id, department_id) VALUES (131, 'Derya', 'Akay', 'derya.akay', '555-131-1111', TO_DATE('2023-02-19', 'YYYY-MM-DD'), 56000, 1002, 20);
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, salary, job_id, department_id) VALUES (132, 'Eren', 'Aksoy', 'eren.aksoy', '555-132-2222', TO_DATE('2022-11-28', 'YYYY-MM-DD'), 87000, 1003, 30);
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, salary, job_id, department_id) VALUES (133, 'Filiz', 'Ertaş', 'filiz.ertas', '555-133-3333', TO_DATE('2023-12-03', 'YYYY-MM-DD'), 93000, 1004, 40);
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, salary, job_id, department_id) VALUES (134, 'Gökhan', 'Işık', 'gokhan.isik', '555-134-4444', TO_DATE('2024-05-10', 'YYYY-MM-DD'), 80000, 1005, 50);
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, salary, job_id, department_id) VALUES (135, 'Hande', 'Doğan', 'hande.dogan', '555-135-5555', TO_DATE('2023-07-21', 'YYYY-MM-DD'), 118000, 1001, 10);
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, salary, job_id, department_id) VALUES (136, 'İrem', 'Yıldırım', 'irem.yildirim', '555-136-6666', TO_DATE('2022-01-09', 'YYYY-MM-DD'), 89000, 1006, 60);
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, salary, job_id, department_id) VALUES (137, 'Murat', 'Taş', 'murat.tas', '555-137-7777', TO_DATE('2024-03-29', 'YYYY-MM-DD'), 98000, 1007, 70);
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, salary, job_id, department_id) VALUES (138, 'Nazlı', 'Aktaş', 'nazli.aktas', '555-138-8888', TO_DATE('2023-05-17', 'YYYY-MM-DD'), 55000, 1008, 80);
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, salary, job_id, department_id) VALUES (139, 'Onur', 'Özkan', 'onur.ozkan', '555-139-9999', TO_DATE('2022-08-04', 'YYYY-MM-DD'), 72000, 1004, 40);
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, salary, job_id, department_id) VALUES (140, 'Pelin', 'Yücel', 'pelin.yucel', '555-140-0000', TO_DATE('2024-06-25', 'YYYY-MM-DD'), 70000, 1005, 50);
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, salary, job_id, department_id) VALUES (141, 'Rıza', 'Şimşek', 'riza.simsek', '555-141-1111', TO_DATE('2023-01-30', 'YYYY-MM-DD'), 88000, 1001, 10);
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, salary, job_id, department_id) VALUES (142, 'Serpil', 'Bayrak', 'serpil.bayrak', '555-142-2222', TO_DATE('2022-04-10', 'YYYY-MM-DD'), 59000, 1002, 20);
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, salary, job_id, department_id) VALUES (143, 'Tufan', 'Kaya', 'tufan.kaya', '555-143-3333', TO_DATE('2023-09-19', 'YYYY-MM-DD'), 83000, 1003, 30);
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, salary, job_id, department_id) VALUES (144, 'Umut', 'Yalçın', 'umut.yalcin', '555-144-4444', TO_DATE('2024-02-08', 'YYYY-MM-DD'), 92000, 1004, 40);
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, salary, job_id, department_id) VALUES (145, 'Volkan', 'Demirci', 'volkan.demirci', '555-145-5555', TO_DATE('2023-08-27', 'YYYY-MM-DD'), 76000, 1005, 50);
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, salary, job_id, department_id) VALUES (146, 'Yasemin', 'Tekin', 'yasemin.tekin', '555-146-6666', TO_DATE('2022-03-22', 'YYYY-MM-DD'), 128000, 1006, 60);
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, salary, job_id, department_id) VALUES (147, 'Zehra', 'Uçar', 'zehra.ucar', '555-147-7777', TO_DATE('2024-01-11', 'YYYY-MM-DD'), 110000, 1007, 70);
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, salary, job_id, department_id) VALUES (148, 'Abdullah', 'Sezer', 'abdullah.sezer', '555-148-8888', TO_DATE('2023-04-04', 'YYYY-MM-DD'), 60000, 1008, 80);
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, salary, job_id, department_id) VALUES (149, 'Bahar', 'Taşçı', 'bahar.tasci', '555-149-9999', TO_DATE('2022-07-28', 'YYYY-MM-DD'), 71000, 1004, 40);
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, salary, job_id, department_id) VALUES (150, 'Caner', 'Ateş', 'caner.ates', '555-150-0000', TO_DATE('2024-05-01', 'YYYY-MM-DD'), 79000, 1001, 10);
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, salary, job_id, department_id) VALUES (151, 'Demet', 'Özkan', 'demet.ozkan', '555-151-1111', TO_DATE('2023-03-15', 'YYYY-MM-DD'), 58000, 1002, 20);
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, salary, job_id, department_id) VALUES (152, 'Engin', 'Yıldız', 'engin.yildiz', '555-152-2222', TO_DATE('2022-10-02', 'YYYY-MM-DD'), 84000, 1003, 30);
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, salary, job_id, department_id) VALUES (153, 'Esra', 'Aydoğan', 'esra.aydogan', '555-153-3333', TO_DATE('2023-11-01', 'YYYY-MM-DD'), 94000, 1004, 40);
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, salary, job_id, department_id) VALUES (154, 'Ferhat', 'Güler', 'ferhat.guler', '555-154-4444', TO_DATE('2024-02-28', 'YYYY-MM-DD'), 75000, 1005, 50);
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, salary, job_id, department_id) VALUES (155, 'Gizem', 'Kara', 'gizem.kara', '555-155-5555', TO_DATE('2023-06-19', 'YYYY-MM-DD'), 110000, 1001, 10);
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, salary, job_id, department_id) VALUES (156, 'Halil', 'Yılmaz', 'halil.yilmaz', '555-156-6666', TO_DATE('2022-05-09', 'YYYY-MM-DD'), 91000, 1006, 60);
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, salary, job_id, department_id) VALUES (157, 'İpek', 'Öztürk', 'ipek.ozturk', '555-157-7777', TO_DATE('2024-04-18', 'YYYY-MM-DD'), 120000, 1007, 70);
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, salary, job_id, department_id) VALUES (158, 'Mert', 'Erdoğan', 'mert.erdogan', '555-158-8888', TO_DATE('2023-01-07', 'YYYY-MM-DD'), 50000, 1008, 80);
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, salary, job_id, department_id) VALUES (159, 'Nilay', 'Turan', 'nilay.turan', '555-159-9999', TO_DATE('2022-09-25', 'YYYY-MM-DD'), 70000, 1004, 40);
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, salary, job_id, department_id) VALUES (160, 'Ozan', 'Kaya', 'ozan.kaya', '555-160-0000', TO_DATE('2024-06-03', 'YYYY-MM-DD'), 82000, 1001, 10);
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, salary, job_id, department_id) VALUES (161, 'Şebnem', 'Aksoy', 'sebnem.aksoy', '555-161-1111', TO_DATE('2023-04-20', 'YYYY-MM-DD'), 55000, 1002, 20);
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, salary, job_id, department_id) VALUES (162, 'Taner', 'Sönmez', 'taner.sonmez', '555-162-2222', TO_DATE('2022-12-15', 'YYYY-MM-DD'), 89000, 1003, 30);
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, salary, job_id, department_id) VALUES (163, 'Tuğçe', 'Yıldırım', 'tugce.yildirim', '555-163-3333', TO_DATE('2023-10-05', 'YYYY-MM-DD'), 96000, 1004, 40);
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, salary, job_id, department_id) VALUES (164, 'Ufuk', 'Doğan', 'ufuk.dogan', '555-164-4444', TO_DATE('2024-03-21', 'YYYY-MM-DD'), 79000, 1005, 50);
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, salary, job_id, department_id) VALUES (165, 'Sena', 'Yılmaz', 'sena.yilmaz', '555-165-5555', TO_DATE('2023-01-09', 'YYYY-MM-DD'), 120000, 1006, 60);
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, salary, job_id, department_id) VALUES (166, 'Canan', 'Kara', 'canan.kara', '555-166-6666', TO_DATE('2022-07-28', 'YYYY-MM-DD'), 105000, 1007, 70);
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, salary, job_id, department_id) VALUES (167, 'Efe', 'Yıldız', 'efe.yildiz', '555-167-7777', TO_DATE('2024-02-15', 'YYYY-MM-DD'), 51000, 1008, 80);
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, salary, job_id, department_id) VALUES (168, 'Gizem', 'Koç', 'gizem.koc', '555-168-8888', TO_DATE('2023-05-11', 'YYYY-MM-DD'), 73000, 1004, 40);
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, salary, job_id, department_id) VALUES (169, 'Harun', 'Demir', 'harun.demir', '555-169-9999', TO_DATE('2022-08-01', 'YYYY-MM-DD'), 86000, 1001, 10);
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, salary, job_id, department_id) VALUES (170, 'İsmail', 'Akdeniz', 'ismail.akdeniz', '555-170-0000', TO_DATE('2024-04-09', 'YYYY-MM-DD'), 61000, 1002, 20);
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, salary, job_id, department_id) VALUES (171, 'Jale', 'Özsoy', 'jale.ozsoy', '555-171-1111', TO_DATE('2023-03-22', 'YYYY-MM-DD'), 89000, 1003, 30);
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, salary, job_id, department_id) VALUES (172, 'Kaan', 'Kurt', 'kaan.kurt', '555-172-2222', TO_DATE('2022-11-05', 'YYYY-MM-DD'), 98000, 1004, 40);
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, salary, job_id, department_id) VALUES (173, 'Lale', 'Acar', 'lale.acar', '555-173-3333', TO_DATE('2023-09-02', 'YYYY-MM-DD'), 77000, 1005, 50);
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, salary, job_id, department_id) VALUES (174, 'Mina', 'Erdem', 'mina.erdem', '555-174-4444', TO_DATE('2024-01-16', 'YYYY-MM-DD'), 125000, 1006, 60);
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, salary, job_id, department_id) VALUES (175, 'Nihal', 'Gök', 'nihal.gok', '555-175-5555', TO_DATE('2023-07-07', 'YYYY-MM-DD'), 135000, 1007, 70);
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, salary, job_id, department_id) VALUES (176, 'Okan', 'Akıncı', 'okan.akinci', '555-176-6666', TO_DATE('2022-02-19', 'YYYY-MM-DD'), 62000, 1008, 80);
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, salary, job_id, department_id) VALUES (177, 'Ömer', 'Dinçer', 'omer.dincer', '555-177-7777', TO_DATE('2023-04-28', 'YYYY-MM-DD'), 75000, 1001, 10);
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, salary, job_id, department_id) VALUES (178, 'Pelin', 'Yüksel', 'pelin.yuksel', '555-178-8888', TO_DATE('2022-09-01', 'YYYY-MM-DD'), 65000, 1002, 20);
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, salary, job_id, department_id) VALUES (179, 'Rüya', 'Kurtuluş', 'ruya.kurtulus', '555-179-9999', TO_DATE('2024-05-15', 'YYYY-MM-DD'), 80000, 1003, 30);
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, salary, job_id, department_id) VALUES (180, 'Sinan', 'Alkan', 'sinan.alkan', '555-180-0000', TO_DATE('2023-02-08', 'YYYY-MM-DD'), 95000, 1004, 40);
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, salary, job_id, department_id) VALUES (181, 'Selin', 'Çetinkaya', 'selin.cetinkaya', '555-181-1111', TO_DATE('2022-10-22', 'YYYY-MM-DD'), 88000, 1005, 50);
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, salary, job_id, department_id) VALUES (182, 'Tolga', 'Öztürk', 'tolga.ozturk', '555-182-2222', TO_DATE('2024-01-30', 'YYYY-MM-DD'), 110000, 1006, 60);
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, salary, job_id, department_id) VALUES (183, 'Burak', 'Şahin', 'burak.sahin', '555-183-3333', TO_DATE('2023-06-12', 'YYYY-MM-DD'), 120000, 1007, 70);
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, salary, job_id, department_id) VALUES (184, 'Yasemin', 'Koç', 'yasemin.koc', '555-184-4444', TO_DATE('2022-04-25', 'YYYY-MM-DD'), 59000, 1008, 80);
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, salary, job_id, department_id) VALUES (185, 'Zeynep', 'Yılmaz', 'zeynep.yilmaz', '555-185-5555', TO_DATE('2023-09-17', 'YYYY-MM-DD'), 75000, 1004, 40);
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, salary, job_id, department_id) VALUES (186, 'Can', 'Akın', 'can.akin', '555-186-6666', TO_DATE('2024-03-05', 'YYYY-MM-DD'), 90000, 1001, 10);
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, salary, job_id, department_id) VALUES (187, 'Gizem', 'Deniz', 'gizem.deniz', '555-187-7777', TO_DATE('2022-11-19', 'YYYY-MM-DD'), 68000, 1002, 20);
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, salary, job_id, department_id) VALUES (188, 'Halil', 'Yıldırım', 'halil.yildirim', '555-188-8888', TO_DATE('2023-05-28', 'YYYY-MM-DD'), 83000, 1003, 30);
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, salary, job_id, department_id) VALUES (189, 'İpek', 'Öztürk', 'ipek.ozturk', '555-189-9999', TO_DATE('2024-02-14', 'YYYY-MM-DD'), 98000, 1004, 40);
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, salary, job_id, department_id) VALUES (190, 'Kerem', 'Aydın', 'kerem.aydin', '555-190-0000', TO_DATE('2023-08-01', 'YYYY-MM-DD'), 70000, 1005, 50);
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, salary, job_id, department_id) VALUES (191, 'Merve', 'Demir', 'merve.demir', '555-191-1111', TO_DATE('2022-06-10', 'YYYY-MM-DD'), 115000, 1006, 60);
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, salary, job_id, department_id) VALUES (192, 'Özgür', 'Akyol', 'ozgur.akyol', '555-192-2222', TO_DATE('2024-01-20', 'YYYY-MM-DD'), 100000, 1007, 70);
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, salary, job_id, department_id) VALUES (193, 'Pınar', 'Aksoy', 'pinar.aksoy', '555-193-3333', TO_DATE('2023-04-12', 'YYYY-MM-DD'), 54000, 1008, 80);
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, salary, job_id, department_id) VALUES (194, 'Seda', 'Polat', 'seda.polat', '555-194-4444', TO_DATE('2022-09-05', 'YYYY-MM-DD'), 72000, 1004, 40);
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, salary, job_id, department_id) VALUES (195, 'Uğur', 'Yılmaz', 'ugur.yilmaz', '555-195-5555', TO_DATE('2024-05-18', 'YYYY-MM-DD'), 81000, 1001, 10);
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, salary, job_id, department_id) VALUES (196, 'Veli', 'Taş', 'veli.tas', '555-196-6666', TO_DATE('2023-01-28', 'YYYY-MM-DD'), 59000, 1002, 20);
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, salary, job_id, department_id) VALUES (197, 'Yasemin', 'Tekin', 'yasemin.tekin', '555-197-7777', TO_DATE('2022-07-03', 'YYYY-MM-DD'), 90000, 1003, 30);
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, salary, job_id, department_id) VALUES (198, 'Zeynep', 'Özkan', 'zeynep.ozkan', '555-198-8888', TO_DATE('2024-03-01', 'YYYY-MM-DD'), 95000, 1004, 40);
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, salary, job_id, department_id) VALUES (199, 'Ali', 'Can', 'ali.can', '555-199-9999', TO_DATE('2023-08-14', 'YYYY-MM-DD'), 80000, 1005, 50);
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, salary, job_id, department_id) VALUES (200, 'Ayşe', 'Gül', 'ayse.gul', '555-200-0000', TO_DATE('2022-12-05', 'YYYY-MM-DD'), 125000, 1006, 60);
+
+-- salaries tablosuna veri ekle
+INSERT INTO salaries (salary_id, employee_id, salary_amount, from_date, to_date) VALUES (1, 101, 75000, TO_DATE('2023-01-15', 'YYYY-MM-DD'), TO_DATE('9999-12-31', 'YYYY-MM-DD'));
+INSERT INTO salaries (salary_id, employee_id, salary_amount, from_date, to_date) VALUES (2, 102, 60000, TO_DATE('2022-03-20', 'YYYY-MM-DD'), TO_DATE('9999-12-31', 'YYYY-MM-DD'));
+INSERT INTO salaries (salary_id, employee_id, salary_amount, from_date, to_date) VALUES (3, 103, 85000, TO_DATE('2023-06-10', 'YYYY-MM-DD'), TO_DATE('9999-12-31', 'YYYY-MM-DD'));
+INSERT INTO salaries (salary_id, employee_id, salary_amount, from_date, to_date) VALUES (4, 104, 90000, TO_DATE('2024-02-25', 'YYYY-MM-DD'), TO_DATE('9999-12-31', 'YYYY-MM-DD'));
+INSERT INTO salaries (salary_id, employee_id, salary_amount, from_date, to_date) VALUES (5, 105, 95000, TO_DATE('2021-11-01', 'YYYY-MM-DD'), TO_DATE('2023-10-31', 'YYYY-MM-DD'));
+INSERT INTO salaries (salary_id, employee_id, salary_amount, from_date, to_date) VALUES (6, 105, 100000, TO_DATE('2023-11-01', 'YYYY-MM-DD'), TO_DATE('9999-12-31', 'YYYY-MM-DD'));
+INSERT INTO salaries (salary_id, employee_id, salary_amount, from_date, to_date) VALUES (7, 106, 70000, TO_DATE('2023-09-01', 'YYYY-MM-DD'), TO_DATE('9999-12-31', 'YYYY-MM-DD'));
+INSERT INTO salaries (salary_id, employee_id, salary_amount, from_date, to_date) VALUES (8, 107, 55000, TO_DATE('2022-05-18', 'YYYY-MM-DD'), TO_DATE('9999-12-31', 'YYYY-MM-DD'));
+INSERT INTO salaries (salary_id, employee_id, salary_amount, from_date, to_date) VALUES (9, 108, 65000, TO_DATE('2024-04-05', 'YYYY-MM-DD'), TO_DATE('9999-12-31', 'YYYY-MM-DD'));
+INSERT INTO salaries (salary_id, employee_id, salary_amount, from_date, to_date) VALUES (10, 109, 80000, TO_DATE('2023-03-12', 'YYYY-MM-DD'), TO_DATE('9999-12-31', 'YYYY-MM-DD'));
+INSERT INTO salaries (salary_id, employee_id, salary_amount, from_date, to_date) VALUES (11, 110, 95000, TO_DATE('2022-08-20', 'YYYY-MM-DD'), TO_DATE('9999-12-31', 'YYYY-MM-DD'));
+INSERT INTO salaries (salary_id, employee_id, salary_amount, from_date, to_date) VALUES (12, 111, 72000, TO_DATE('2024-01-01', 'YYYY-MM-DD'), TO_DATE('9999-12-31', 'YYYY-MM-DD'));
+INSERT INTO salaries (salary_id, employee_id, salary_amount, from_date, to_date) VALUES (13, 112, 58000, TO_DATE('2023-10-10', 'YYYY-MM-DD'), TO_DATE('9999-12-31', 'YYYY-MM-DD'));
+INSERT INTO salaries (salary_id, employee_id, salary_amount, from_date, to_date) VALUES (14, 113, 92000, TO_DATE('2022-12-05', 'YYYY-MM-DD'), TO_DATE('9999-12-31', 'YYYY-MM-DD'));
+INSERT INTO salaries (salary_id, employee_id, salary_amount, from_date, to_date) VALUES (15, 114, 88000, TO_DATE('2024-05-18', 'YYYY-MM-DD'), TO_DATE('9999-12-31', 'YYYY-MM-DD'));
+INSERT INTO salaries (salary_id, employee_id, salary_amount, from_date, to_date) VALUES (16, 115, 115000, TO_DATE('2023-08-01', 'YYYY-MM-DD'), TO_DATE('9999-12-31', 'YYYY-MM-DD'));
+INSERT INTO salaries (salary_id, employee_id, salary_amount, from_date, to_date) VALUES (17, 116, 75000, TO_DATE('2022-02-14', 'YYYY-MM-DD'), TO_DATE('9999-12-31', 'YYYY-MM-DD'));
+INSERT INTO salaries (salary_id, employee_id, salary_amount, from_date, to_date) VALUES (18, 117, 60000, TO_DATE('2024-06-20', 'YYYY-MM-DD'), TO_DATE('9999-12-31', 'YYYY-MM-DD'));
+INSERT INTO salaries (salary_id, employee_id, salary_amount, from_date, to_date) VALUES (19, 118, 78000, TO_DATE('2023-04-01', 'YYYY-MM-DD'), TO_DATE('9999-12-31', 'YYYY-MM-DD'));
+INSERT INTO salaries (salary_id, employee_id, salary_amount, from_date, to_date) VALUES (20, 119, 95000, TO_DATE('2022-09-09', 'YYYY-MM-DD'), TO_DATE('9999-12-31', 'YYYY-MM-DD'));
+INSERT INTO salaries (salary_id, employee_id, salary_amount, from_date, to_date) VALUES (21, 120, 105000, TO_DATE('2023-07-25', 'YYYY-MM-DD'), TO_DATE('9999-12-31', 'YYYY-MM-DD'));
+INSERT INTO salaries (salary_id, employee_id, salary_amount, from_date, to_date) VALUES (22, 121, 62000, TO_DATE('2024-03-01', 'YYYY-MM-DD'), TO_DATE('9999-12-31', 'YYYY-MM-DD'));
+INSERT INTO salaries (salary_id, employee_id, salary_amount, from_date, to_date) VALUES (23, 122, 81000, TO_DATE('2022-10-15', 'YYYY-MM-DD'), TO_DATE('9999-12-31', 'YYYY-MM-DD'));
+INSERT INTO salaries (salary_id, employee_id, salary_amount, from_date, to_date) VALUES (24, 123, 91000, TO_DATE('2023-11-20', 'YYYY-MM-DD'), TO_DATE('9999-12-31', 'YYYY-MM-DD'));
+INSERT INTO salaries (salary_id, employee_id, salary_amount, from_date, to_date) VALUES (25, 124, 78000, TO_DATE('2024-02-12', 'YYYY-MM-DD'), TO_DATE('9999-12-31', 'YYYY-MM-DD'));
+INSERT INTO salaries (salary_id, employee_id, salary_amount, from_date, to_date) VALUES (26, 125, 125000, TO_DATE('2023-05-08', 'YYYY-MM-DD'), TO_DATE('9999-12-31', 'YYYY-MM-DD'));
+INSERT INTO salaries (salary_id, employee_id, salary_amount, from_date, to_date) VALUES (27, 126, 85000, TO_DATE('2022-07-11', 'YYYY-MM-DD'), TO_DATE('9999-12-31', 'YYYY-MM-DD'));
+INSERT INTO salaries (salary_id, employee_id, salary_amount, from_date, to_date) VALUES (28, 127, 95000, TO_DATE('2024-01-22', 'YYYY-MM-DD'), TO_DATE('9999-12-31', 'YYYY-MM-DD'));
+INSERT INTO salaries (salary_id, employee_id, salary_amount, from_date, to_date) VALUES (29, 128, 52000, TO_DATE('2023-03-05', 'YYYY-MM-DD'), TO_DATE('9999-12-31', 'YYYY-MM-DD'));
+INSERT INTO salaries (salary_id, employee_id, salary_amount, from_date, to_date) VALUES (30, 129, 68000, TO_DATE('2022-06-30', 'YYYY-MM-DD'), TO_DATE('9999-12-31', 'YYYY-MM-DD'));
+INSERT INTO salaries (salary_id, employee_id, salary_amount, from_date, to_date) VALUES (31, 130, 74000, TO_DATE('2024-04-14', 'YYYY-MM-DD'), TO_DATE('9999-12-31', 'YYYY-MM-DD'));
+INSERT INTO salaries (salary_id, employee_id, salary_amount, from_date, to_date) VALUES (32, 131, 56000, TO_DATE('2023-02-19', 'YYYY-MM-DD'), TO_DATE('9999-12-31', 'YYYY-MM-DD'));
+INSERT INTO salaries (salary_id, employee_id, salary_amount, from_date, to_date) VALUES (33, 132, 87000, TO_DATE('2022-11-28', 'YYYY-MM-DD'), TO_DATE('9999-12-31', 'YYYY-MM-DD'));
+INSERT INTO salaries (salary_id, employee_id, salary_amount, from_date, to_date) VALUES (34, 133, 93000, TO_DATE('2023-12-03', 'YYYY-MM-DD'), TO_DATE('9999-12-31', 'YYYY-MM-DD'));
+INSERT INTO salaries (salary_id, employee_id, salary_amount, from_date, to_date) VALUES (35, 134, 80000, TO_DATE('2024-05-10', 'YYYY-MM-DD'), TO_DATE('9999-12-31', 'YYYY-MM-DD'));
+INSERT INTO salaries (salary_id, employee_id, salary_amount, from_date, to_date) VALUES (36, 135, 118000, TO_DATE('2023-07-21', 'YYYY-MM-DD'), TO_DATE('9999-12-31', 'YYYY-MM-DD'));
+INSERT INTO salaries (salary_id, employee_id, salary_amount, from_date, to_date) VALUES (37, 136, 89000, TO_DATE('2022-01-09', 'YYYY-MM-DD'), TO_DATE('9999-12-31', 'YYYY-MM-DD'));
+INSERT INTO salaries (salary_id, employee_id, salary_amount, from_date, to_date) VALUES (38, 137, 98000, TO_DATE('2024-03-29', 'YYYY-MM-DD'), TO_DATE('9999-12-31', 'YYYY-MM-DD'));
+INSERT INTO salaries (salary_id, employee_id, salary_amount, from_date, to_date) VALUES (39, 138, 55000, TO_DATE('2023-05-17', 'YYYY-MM-DD'), TO_DATE('9999-12-31', 'YYYY-MM-DD'));
+INSERT INTO salaries (salary_id, employee_id, salary_amount, from_date, to_date) VALUES (40, 139, 72000, TO_DATE('2022-08-04', 'YYYY-MM-DD'), TO_DATE('9999-12-31', 'YYYY-MM-DD'));
+INSERT INTO salaries (salary_id, employee_id, salary_amount, from_date, to_date) VALUES (41, 140, 70000, TO_DATE('2024-06-25', 'YYYY-MM-DD'), TO_DATE('9999-12-31', 'YYYY-MM-DD'));
+INSERT INTO salaries (salary_id, employee_id, salary_amount, from_date, to_date) VALUES (42, 141, 88000, TO_DATE('2023-01-30', 'YYYY-MM-DD'), TO_DATE('9999-12-31', 'YYYY-MM-DD'));
+INSERT INTO salaries (salary_id, employee_id, salary_amount, from_date, to_date) VALUES (43, 142, 59000, TO_DATE('2022-04-10', 'YYYY-MM-DD'), TO_DATE('9999-12-31', 'YYYY-MM-DD'));
+INSERT INTO salaries (salary_id, employee_id, salary_amount, from_date, to_date) VALUES (44, 143, 83000, TO_DATE('2023-09-19', 'YYYY-MM-DD'), TO_DATE('9999-12-31', 'YYYY-MM-DD'));
+INSERT INTO salaries (salary_id, employee_id, salary_amount, from_date, to_date) VALUES (45, 144, 92000, TO_DATE('2024-02-08', 'YYYY-MM-DD'), TO_DATE('9999-12-31', 'YYYY-MM-DD'));
+INSERT INTO salaries (salary_id, employee_id, salary_amount, from_date, to_date) VALUES (46, 145, 76000, TO_DATE('2023-08-27', 'YYYY-MM-DD'), TO_DATE('9999-12-31', 'YYYY-MM-DD'));
+INSERT INTO salaries (salary_id, employee_id, salary_amount, from_date, to_date) VALUES (47, 146, 128000, TO_DATE('2022-03-22', 'YYYY-MM-DD'), TO_DATE('9999-12-31', 'YYYY-MM-DD'));
+INSERT INTO salaries (salary_id, employee_id, salary_amount, from_date, to_date) VALUES (48, 147, 110000, TO_DATE('2024-01-11', 'YYYY-MM-DD'), TO_DATE('9999-12-31', 'YYYY-MM-DD'));
+INSERT INTO salaries (salary_id, employee_id, salary_amount, from_date, to_date) VALUES (49, 148, 60000, TO_DATE('2023-04-04', 'YYYY-MM-DD'), TO_DATE('9999-12-31', 'YYYY-MM-DD'));
+INSERT INTO salaries (salary_id, employee_id, salary_amount, from_date, to_date) VALUES (50, 149, 71000, TO_DATE('2022-07-28', 'YYYY-MM-DD'), TO_DATE('9999-12-31', 'YYYY-MM-DD'));
+INSERT INTO salaries (salary_id, employee_id, salary_amount, from_date, to_date) VALUES (51, 150, 79000, TO_DATE('2024-05-01', 'YYYY-MM-DD'), TO_DATE('9999-12-31', 'YYYY-MM-DD'));
+INSERT INTO salaries (salary_id, employee_id, salary_amount, from_date, to_date) VALUES (52, 151, 58000, TO_DATE('2023-03-15', 'YYYY-MM-DD'), TO_DATE('9999-12-31', 'YYYY-MM-DD'));
+INSERT INTO salaries (salary_id, employee_id, salary_amount, from_date, to_date) VALUES (53, 152, 84000, TO_DATE('2022-10-02', 'YYYY-MM-DD'), TO_DATE('9999-12-31', 'YYYY-MM-DD'));
+INSERT INTO salaries (salary_id, employee_id, salary_amount, from_date, to_date) VALUES (54, 153, 94000, TO_DATE('2023-11-01', 'YYYY-MM-DD'), TO_DATE('9999-12-31', 'YYYY-MM-DD'));
+INSERT INTO salaries (salary_id, employee_id, salary_amount, from_date, to_date) VALUES (55, 154, 75000, TO_DATE('2024-02-28', 'YYYY-MM-DD'), TO_DATE('9999-12-31', 'YYYY-MM-DD'));
+INSERT INTO salaries (salary_id, employee_id, salary_amount, from_date, to_date) VALUES (56, 155, 110000, TO_DATE('2023-06-19', 'YYYY-MM-DD'), TO_DATE('9999-12-31', 'YYYY-MM-DD'));
+INSERT INTO salaries (salary_id, employee_id, salary_amount, from_date, to_date) VALUES (57, 156, 91000, TO_DATE('2022-05-09', 'YYYY-MM-DD'), TO_DATE('9999-12-31', 'YYYY-MM-DD'));
+INSERT INTO salaries (salary_id, employee_id, salary_amount, from_date, to_date) VALUES (58, 157, 120000, TO_DATE('2024-04-18', 'YYYY-MM-DD'), TO_DATE('9999-12-31', 'YYYY-MM-DD'));
+INSERT INTO salaries (salary_id, employee_id, salary_amount, from_date, to_date) VALUES (59, 158, 50000, TO_DATE('2023-01-07', 'YYYY-MM-DD'), TO_DATE('9999-12-31', 'YYYY-MM-DD'));
+INSERT INTO salaries (salary_id, employee_id, salary_amount, from_date, to_date) VALUES (60, 159, 70000, TO_DATE('2022-09-25', 'YYYY-MM-DD'), TO_DATE('9999-12-31', 'YYYY-MM-DD'));
+INSERT INTO salaries (salary_id, employee_id, salary_amount, from_date, to_date) VALUES (61, 160, 82000, TO_DATE('2024-06-03', 'YYYY-MM-DD'), TO_DATE('9999-12-31', 'YYYY-MM-DD'));
+INSERT INTO salaries (salary_id, employee_id, salary_amount, from_date, to_date) VALUES (62, 161, 55000, TO_DATE('2023-04-20', 'YYYY-MM-DD'), TO_DATE('9999-12-31', 'YYYY-MM-DD'));
+INSERT INTO salaries (salary_id, employee_id, salary_amount, from_date, to_date) VALUES (63, 162, 89000, TO_DATE('2022-12-15', 'YYYY-MM-DD'), TO_DATE('9999-12-31', 'YYYY-MM-DD'));
+INSERT INTO salaries (salary_id, employee_id, salary_amount, from_date, to_date) VALUES (64, 163, 96000, TO_DATE('2023-10-05', 'YYYY-MM-DD'), TO_DATE('9999-12-31', 'YYYY-MM-DD'));
+INSERT INTO salaries (salary_id, employee_id, salary_amount, from_date, to_date) VALUES (65, 164, 79000, TO_DATE('2024-03-21', 'YYYY-MM-DD'), TO_DATE('9999-12-31', 'YYYY-MM-DD'));
+INSERT INTO salaries (salary_id, employee_id, salary_amount, from_date, to_date) VALUES (66, 165, 120000, TO_DATE('2023-01-09', 'YYYY-MM-DD'), TO_DATE('9999-12-31', 'YYYY-MM-DD'));
+INSERT INTO salaries (salary_id, employee_id, salary_amount, from_date, to_date) VALUES (67, 166, 105000, TO_DATE('2022-07-28', 'YYYY-MM-DD'), TO_DATE('9999-12-31', 'YYYY-MM-DD'));
+INSERT INTO salaries (salary_id, employee_id, salary_amount, from_date, to_date) VALUES (68, 167, 51000, TO_DATE('2024-02-15', 'YYYY-MM-DD'), TO_DATE('9999-12-31', 'YYYY-MM-DD'));
+INSERT INTO salaries (salary_id, employee_id, salary_amount, from_date, to_date) VALUES (69, 168, 73000, TO_DATE('2023-05-11', 'YYYY-MM-DD'), TO_DATE('9999-12-31', 'YYYY-MM-DD'));
+INSERT INTO salaries (salary_id, employee_id, salary_amount, from_date, to_date) VALUES (70, 169, 86000, TO_DATE('2022-08-01', 'YYYY-MM-DD'), TO_DATE('9999-12-31', 'YYYY-MM-DD'));
+INSERT INTO salaries (salary_id, employee_id, salary_amount, from_date, to_date) VALUES (71, 170, 61000, TO_DATE('2024-04-09', 'YYYY-MM-DD'), TO_DATE('9999-12-31', 'YYYY-MM-DD'));
+INSERT INTO salaries (salary_id, employee_id, salary_amount, from_date, to_date) VALUES (72, 171, 89000, TO_DATE('2023-03-22', 'YYYY-MM-DD'), TO_DATE('9999-12-31', 'YYYY-MM-DD'));
+INSERT INTO salaries (salary_id, employee_id, salary_amount, from_date, to_date) VALUES (73, 172, 98000, TO_DATE('2022-11-05', 'YYYY-MM-DD'), TO_DATE('9999-12-31', 'YYYY-MM-DD'));
+INSERT INTO salaries (salary_id, employee_id, salary_amount, from_date, to_date) VALUES (74, 173, 77000, TO_DATE('2023-09-02', 'YYYY-MM-DD'), TO_DATE('9999-12-31', 'YYYY-MM-DD'));
+INSERT INTO salaries (salary_id, employee_id, salary_amount, from_date, to_date) VALUES (75, 174, 125000, TO_DATE('2024-01-16', 'YYYY-MM-DD'), TO_DATE('9999-12-31', 'YYYY-MM-DD'));
+INSERT INTO salaries (salary_id, employee_id, salary_amount, from_date, to_date) VALUES (76, 175, 135000, TO_DATE('2023-07-07', 'YYYY-MM-DD'), TO_DATE('9999-12-31', 'YYYY-MM-DD'));
+INSERT INTO salaries (salary_id, employee_id, salary_amount, from_date, to_date) VALUES (77, 176, 62000, TO_DATE('2022-02-19', 'YYYY-MM-DD'), TO_DATE('9999-12-31', 'YYYY-MM-DD'));
+INSERT INTO salaries (salary_id, employee_id, salary_amount, from_date, to_date) VALUES (78, 177, 75000, TO_DATE('2023-04-28', 'YYYY-MM-DD'), TO_DATE('9999-12-31', 'YYYY-MM-DD'));
+INSERT INTO salaries (salary_id, employee_id, salary_amount, from_date, to_date) VALUES (79, 178, 65000, TO_DATE('2022-09-01', 'YYYY-MM-DD'), TO_DATE('9999-12-31', 'YYYY-MM-DD'));
+INSERT INTO salaries (salary_id, employee_id, salary_amount, from_date, to_date) VALUES (80, 179, 80000, TO_DATE('2024-05-15', 'YYYY-MM-DD'), TO_DATE('9999-12-31', 'YYYY-MM-DD'));
+INSERT INTO salaries (salary_id, employee_id, salary_amount, from_date, to_date) VALUES (81, 180, 95000, TO_DATE('2023-02-08', 'YYYY-MM-DD'), TO_DATE('9999-12-31', 'YYYY-MM-DD'));
+INSERT INTO salaries (salary_id, employee_id, salary_amount, from_date, to_date) VALUES (82, 181, 88000, TO_DATE('2022-10-22', 'YYYY-MM-DD'), TO_DATE('9999-12-31', 'YYYY-MM-DD'));
+INSERT INTO salaries (salary_id, employee_id, salary_amount, from_date, to_date) VALUES (83, 182, 110000, TO_DATE('2024-01-30', 'YYYY-MM-DD'), TO_DATE('9999-12-31', 'YYYY-MM-DD'));
+INSERT INTO salaries (salary_id, employee_id, salary_amount, from_date, to_date) VALUES (84, 183, 120000, TO_DATE('2023-06-12', 'YYYY-MM-DD'), TO_DATE('9999-12-31', 'YYYY-MM-DD'));
+INSERT INTO salaries (salary_id, employee_id, salary_amount, from_date, to_date) VALUES (85, 184, 59000, TO_DATE('2022-04-25', 'YYYY-MM-DD'), TO_DATE('9999-12-31', 'YYYY-MM-DD'));
+INSERT INTO salaries (salary_id, employee_id, salary_amount, from_date, to_date) VALUES (86, 185, 75000, TO_DATE('2023-09-17', 'YYYY-MM-DD'), TO_DATE('9999-12-31', 'YYYY-MM-DD'));
+INSERT INTO salaries (salary_id, employee_id, salary_amount, from_date, to_date) VALUES (87, 186, 90000, TO_DATE('2024-03-05', 'YYYY-MM-DD'), TO_DATE('9999-12-31', 'YYYY-MM-DD'));
+INSERT INTO salaries (salary_id, employee_id, salary_amount, from_date, to_date) VALUES (88, 187, 68000, TO_DATE('2022-11-19', 'YYYY-MM-DD'), TO_DATE('9999-12-31', 'YYYY-MM-DD'));
+INSERT INTO salaries (salary_id, employee_id, salary_amount, from_date, to_date) VALUES (89, 188, 83000, TO_DATE('2023-05-28', 'YYYY-MM-DD'), TO_DATE('9999-12-31', 'YYYY-MM-DD'));
+INSERT INTO salaries (salary_id, employee_id, salary_amount, from_date, to_date) VALUES (90, 189, 98000, TO_DATE('2024-02-14', 'YYYY-MM-DD'), TO_DATE('9999-12-31', 'YYYY-MM-DD'));
+INSERT INTO salaries (salary_id, employee_id, salary_amount, from_date, to_date) VALUES (91, 190, 70000, TO_DATE('2023-08-01', 'YYYY-MM-DD'), TO_DATE('9999-12-31', 'YYYY-MM-DD'));
+INSERT INTO salaries (salary_id, employee_id, salary_amount, from_date, to_date) VALUES (92, 191, 115000, TO_DATE('2022-06-10', 'YYYY-MM-DD'), TO_DATE('9999-12-31', 'YYYY-MM-DD'));
+INSERT INTO salaries (salary_id, employee_id, salary_amount, from_date, to_date) VALUES (93, 192, 100000, TO_DATE('2024-01-20', 'YYYY-MM-DD'), TO_DATE('9999-12-31', 'YYYY-MM-DD'));
+INSERT INTO salaries (salary_id, employee_id, salary_amount, from_date, to_date) VALUES (94, 193, 54000, TO_DATE('2023-04-12', 'YYYY-MM-DD'), TO_DATE('9999-12-31', 'YYYY-MM-DD'));
+INSERT INTO salaries (salary_id, employee_id, salary_amount, from_date, to_date) VALUES (95, 194, 72000, TO_DATE('2022-09-05', 'YYYY-MM-DD'), TO_DATE('9999-12-31', 'YYYY-MM-DD'));
+INSERT INTO salaries (salary_id, employee_id, salary_amount, from_date, to_date) VALUES (96, 195, 81000, TO_DATE('2024-05-18', 'YYYY-MM-DD'), TO_DATE('9999-12-31', 'YYYY-MM-DD'));
+INSERT INTO salaries (salary_id, employee_id, salary_amount, from_date, to_date) VALUES (97, 196, 59000, TO_DATE('2023-01-28', 'YYYY-MM-DD'), TO_DATE('9999-12-31', 'YYYY-MM-DD'));
+INSERT INTO salaries (salary_id, employee_id, salary_amount, from_date, to_date) VALUES (98, 197, 90000, TO_DATE('2022-07-03', 'YYYY-MM-DD'), TO_DATE('9999-12-31', 'YYYY-MM-DD'));
+INSERT INTO salaries (salary_id, employee_id, salary_amount, from_date, to_date) VALUES (99, 198, 95000, TO_DATE('2024-03-01', 'YYYY-MM-DD'), TO_DATE('9999-12-31', 'YYYY-MM-DD'));
+INSERT INTO salaries (salary_id, employee_id, salary_amount, from_date, to_date) VALUES (100, 199, 80000, TO_DATE('2023-08-14', 'YYYY-MM-DD'), TO_DATE('9999-12-31', 'YYYY-MM-DD'));
+INSERT INTO salaries (salary_id, employee_id, salary_amount, from_date, to_date) VALUES (101, 200, 125000, TO_DATE('2022-12-05', 'YYYY-MM-DD'), TO_DATE('9999-12-31', 'YYYY-MM-DD'));
+
+select * from EMPLOYEES
+
+--tüm çalışanların adı soyadı ve maaşı
+SELECT
+    e.first_name,
+    e.last_name,
+    s.salary_amount
+FROM
+    employees e
+JOIN
+    salaries s ON e.employee_id = s.employee_id;
+
+--maaşı 75000'den büyük olan çalışanların adı soyadı maaşı
+SELECT
+    e.first_name,
+    e.last_name,
+    s.salary_amount
+FROM
+    employees e
+JOIN
+    salaries s ON e.employee_id = s.employee_id
+WHERE
+    s.salary_amount > 75000;
+    
+--toplam çalışan sayısı
+SELECT
+    COUNT(employee_id) AS total_employees
+FROM
+    employees;
+
+--en yüksek maaşı sıralama yaparak bulur
+SELECT
+    e.first_name,
+    e.last_name,
+    s.salary_amount
+FROM
+    employees e
+JOIN
+    salaries s ON e.employee_id = s.employee_id
+ORDER BY
+    s.salary_amount DESC
+FETCH NEXT 1 ROWS ONLY;
+
+--her departmandaki çalışan sayısı
+SELECT
+    d.department_name,
+    COUNT(e.employee_id) AS employee_count
+FROM
+    employees e
+JOIN
+    departments d ON e.department_id = d.department_id
+GROUP BY
+    d.department_name
+ORDER BY
+    employee_count DESC;
+
+--maaş ortalaması
+SELECT
+    AVG(salary_amount) AS average_salary
+FROM
+    salaries;
+    
+--çalışanların isim soyisimlerini birleştirip büyük harfe çevirme
+SELECT
+    UPPER(first_name || ' ' || last_name) AS full_name_uppercase
+FROM
+    employees;
+    
+--işe başlama tarihlerine göre 10 yıl sonraki tarihleri hesaplama
+SELECT
+    first_name,
+    last_name,
+    hire_date,
+    ADD_MONTHS(hire_date, 120) AS ten_years_later
+FROM
+    employees;
+    
+--NVL phone number boş ile 'telefon numarası yok' yazdırılsın
+SELECT
+    first_name,
+    NVL(phone_number, 'Telefon Numarası Yok') AS contact_info
+FROM
+    employees;
+    
+--her departmanın ortalam maaşını bulan sorgu
+SELECT
+    d.department_name,
+    AVG(e.salary) AS average_salary
+FROM
+    employees e
+JOIN
+    departments d ON e.department_id = d.department_id
+GROUP BY
+    d.department_name;
+    
+--her departmanın çalışan sayısını bulan sorgu
+SELECT
+    d.department_name,
+    COUNT(e.employee_id) AS employee_count
+FROM
+    employees e
+JOIN
+    departments d ON e.department_id = d.department_id
+GROUP BY
+    d.department_name
+ORDER BY
+    employee_count DESC;
+    
+--toplam çalışan sayısı 10'dan fazla olan departmanları listeleyen sorgu
+SELECT
+    d.department_name,
+    COUNT(e.employee_id) AS employee_count
+FROM
+    employees e
+JOIN
+    departments d ON e.department_id = d.department_id
+GROUP BY
+    d.department_name
+HAVING
+    COUNT(e.employee_id) > 10;
+    
+--çalışanların adını soyadını ve çalıştıkları departmanın adını listeyen sorgu JOIN
+SELECT
+    e.first_name,
+    e.last_name,
+    d.department_name
+FROM
+    employees e
+INNER JOIN
+    departments d ON e.department_id = d.department_id;
+    
+--tüm departmanları ve departmanlarda çalışan kişileri listele
+SELECT
+    d.department_name,
+    e.first_name,
+    e.last_name
+FROM
+    departments d
+LEFT JOIN
+    employees e ON d.department_id = e.department_id;
+    
+    
+SELECT
+    e.first_name,
+    e.last_name,
+    d.department_name
+FROM
+    employees e
+RIGHT JOIN
+    departments d ON e.department_id = d.department_id;
+    
+--her çalışanın adını soyadını departmanını ve iş ünvanını listele
+SELECT
+    e.first_name,
+    e.last_name,
+    d.department_name,
+    j.job_title
+FROM
+    employees e
+JOIN
+    departments d ON e.department_id = d.department_id
+JOIN
+    jobs j ON e.job_id = j.job_id;
+    
+--ortalama maaşın üzerinde alan çalışanlar
+SELECT
+    first_name,
+    last_name,
+    salary
+FROM
+    employees
+WHERE
+    salary > (SELECT AVG(salary) FROM employees);
+    
+--belirli departmanlardaki çalışanları bulma
+SELECT
+    first_name,
+    last_name,
+    department_id
+FROM
+    employees
+WHERE
+    department_id IN (SELECT department_id FROM departments WHERE department_name IN ('Yazılım', 'Pazarlama'));
+    
+--en yüksek maaşı alan çalışanları bulma
+SELECT
+    first_name,
+    last_name,
+    salary
+FROM
+    employees
+WHERE
+    salary = (SELECT MAX(salary) FROM employees);
+    
+--yazılım departmanında çalışanlar ile pazarlama departmanında çalışanları birleştirir UNION
+SELECT
+    first_name,
+    last_name,
+    'Yazılım Departmanı' AS department
+FROM
+    employees
+WHERE
+    department_id = (SELECT department_id FROM departments WHERE department_name = 'Yazılım')
+UNION
+SELECT
+    first_name,
+    last_name,
+    'Pazarlama Departmanı' AS department
+FROM
+    employees
+WHERE
+    department_id = (SELECT department_id FROM departments WHERE department_name = 'Pazarlama');
+    
+------
+SELECT
+    first_name,
+    last_name,
+    'Yazılım Departmanı' AS department
+FROM
+    employees
+WHERE
+    department_id = (SELECT department_id FROM departments WHERE department_name = 'Yazılım')
+UNION ALL
+SELECT
+    first_name,
+    last_name,
+    'Pazarlama Departmanı' AS department
+FROM
+    employees
+WHERE
+    department_id = (SELECT department_id FROM departments WHERE department_name = 'Pazarlama');
+    
+ 
+ --her departmanı maaşa göre sıralama 
+ SELECT
+    first_name,
+    last_name,
+    salary,
+    ROW_NUMBER() OVER (PARTITION BY department_id ORDER BY salary DESC) AS row_num
+FROM
+    employees;
+    
+--en yüksek maaş alan çalışanları bulan sorgu
+SELECT
+    first_name,
+    last_name,
+    salary,
+    RANK() OVER (ORDER BY salary DESC) AS salary_rank
+FROM
+    employees;
+    
+--her departmanın en yüksek maaşı çalışanını bulma
+SELECT
+    first_name,
+    last_name,
+    department_name,
+    salary
+FROM (
+    SELECT
+        e.first_name,
+        e.last_name,
+        e.salary,
+        d.department_name,
+        ROW_NUMBER() OVER (PARTITION BY e.department_id ORDER BY e.salary DESC) AS rn
+    FROM
+        employees e
+    JOIN
+        departments d ON e.department_id = d.department_id
+)
+WHERE rn = 1;
+    
+--Verileri koşullu olarak değiştirmek DECODE
+SELECT
+    department_name,
+    DECODE(department_name, 'Yazılım', 'IT Departmanı', department_name) AS duzenlenmis_departman_adi
+FROM
+    departments;
+
+-- Sistemsel değerleri seçme DUAL
+SELECT
+    SYSDATE AS bugunun_tarihi
+FROM
+    DUAL;
+
+
+--Hiyerarşik veri sorgulama için manager_id ekliyorum
+ALTER TABLE employees ADD (manager_id NUMBER(6));
+--rastgele yöneticilik hiyerarşisi
+UPDATE employees SET manager_id = NULL WHERE employee_id = 101;
+--diğer çalışanlara rastgele yöneticiler atama
+UPDATE employees SET manager_id = (SELECT employee_id FROM employees WHERE employee_id != 101 ORDER BY DBMS_RANDOM.VALUE FETCH FIRST 1 ROWS ONLY) WHERE employee_id != 101;
+
+--hiyerarşik veriyi sorgulama
+SELECT
+    first_name,
+    last_name,
+    LEVEL AS hiyerarsi_seviyesi
+FROM
+    employees
+START WITH
+    manager_id IS NULL
+CONNECT BY
+    PRIOR employee_id = manager_id;

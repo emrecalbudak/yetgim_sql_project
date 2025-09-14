@@ -1,0 +1,11 @@
+<?xml version='1.0'  encoding='UTF-8' ?>
+<history>
+	<historyItem>
+		<sql><![CDATA[UPDATE employees SET manager_id = (SELECT employee_id FROM employees WHERE employee_id != 101 ORDER BY DBMS_RANDOM.VALUE FETCH FIRST 1 ROWS ONLY) WHERE employee_id != 101;]]></sql>
+		<connection><![CDATA[exmdb]]></connection>
+		<timestamp><![CDATA[1757768579202]]></timestamp>
+		<type><![CDATA[SQL]]></type>
+		<executed><![CDATA[1]]></executed>
+		<execTime><![CDATA[0.072]]></execTime>
+	</historyItem>
+</history>

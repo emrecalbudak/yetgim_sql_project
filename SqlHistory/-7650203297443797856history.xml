@@ -1,0 +1,28 @@
+<?xml version='1.0'  encoding='UTF-8' ?>
+<history>
+	<historyItem>
+		<sql><![CDATA[SELECT
+    first_name,
+    last_name,
+    department_name,
+    salary
+FROM (
+    SELECT
+        e.first_name,
+        e.last_name,
+        e.salary,
+        d.department_name,
+        ROW_NUMBER() OVER (PARTITION BY e.department_id ORDER BY e.salary DESC) AS rn
+    FROM
+        employees e
+    JOIN
+        departments d ON e.department_id = d.department_id
+)
+WHERE rn = 1;]]></sql>
+		<connection><![CDATA[exmdb]]></connection>
+		<timestamp><![CDATA[1757768329745]]></timestamp>
+		<type><![CDATA[SQL]]></type>
+		<executed><![CDATA[2]]></executed>
+		<execTime><![CDATA[0.002]]></execTime>
+	</historyItem>
+</history>

@@ -1,0 +1,12 @@
+<?xml version='1.0'  encoding='UTF-8' ?>
+<history>
+	<historyItem>
+		<sql><![CDATA[INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, salary, job_id, department_id)
+VALUES (300, 'Can', 'Öztürk', 'can.ozturk@example.com', '555-300-0000', SYSDATE, 75000, 1001, 10);]]></sql>
+		<connection><![CDATA[exmdb]]></connection>
+		<timestamp><![CDATA[1757852311895]]></timestamp>
+		<type><![CDATA[SQL]]></type>
+		<executed><![CDATA[2]]></executed>
+		<execTime><![CDATA[0.004]]></execTime>
+	</historyItem>
+</history>

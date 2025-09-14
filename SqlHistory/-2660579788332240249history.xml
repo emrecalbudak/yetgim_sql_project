@@ -1,0 +1,27 @@
+<?xml version='1.0'  encoding='UTF-8' ?>
+<history>
+	<historyItem>
+		<sql><![CDATA[SELECT
+    first_name,
+    last_name,
+    'Yazılım Departmanı' AS department
+FROM
+    employees
+WHERE
+    department_id = (SELECT department_id FROM departments WHERE department_name = 'Yazılım')
+UNION ALL
+SELECT
+    first_name,
+    last_name,
+    'Pazarlama Departmanı' AS department
+FROM
+    employees
+WHERE
+    department_id = (SELECT department_id FROM departments WHERE department_name = 'Pazarlama');]]></sql>
+		<connection><![CDATA[exmdb]]></connection>
+		<timestamp><![CDATA[1757767150988]]></timestamp>
+		<type><![CDATA[SQL]]></type>
+		<executed><![CDATA[1]]></executed>
+		<execTime><![CDATA[0.015]]></execTime>
+	</historyItem>
+</history>
